@@ -1,0 +1,36 @@
+body {
+  background-color: #BBBBBB;
+  font-family: SourceHanSansSC-bold;
+}
+header {
+  height: 70px;
+  background-color: #fff;
+}
+header ul {
+  line-height: 70px;
+  list-style: none;
+}
+header ul li {
+  display: inline-block;
+  position: relative;
+  left: 300px;
+  margin-right: 51px;
+  color: #414142;
+  font-size: 18px;
+}
+.banner {
+  position: relative;
+  height: 750px;
+  background: url(../image/index_banner.jpg) no-repeat center;
+  background-size: 100%;
+}
+.banner button {
+  position: absolute;
+  width: 205px;
+  height: 47px;
+  background-color: #E51C23;
+  color: #fff;
+  border: none;
+  left: 605px;
+  top: 725px;
+}
