@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 1200px;
+  font-family: Microsoft YaHei,Arial;
+}
+ul {
+  list-style: none;
+}
+ul li:hover {
+  color: #c7000b;
+  cursor: pointer;
+}
+.clearfix, .clearfix:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.header {
+  cursor: pointer;
+}
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation: slideInDown linear .2s;
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightSpeedIn {
+  animation: lightSpeedIn ease .2s;
+}
+
+@keyframes widthSlide {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 500px;
+  }
+}
+.widthSlide {
+  animation: widthSlide ease-in-out .3s;
+}
